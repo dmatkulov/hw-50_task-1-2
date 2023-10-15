@@ -17,10 +17,16 @@
     <div id="app"></div>
 
     <script type="text/babel">
+        const Icon = () => {
+            return(
+                <button type="button" className="fav-btn">Favourite</button>
+            )
+        }
         const Poster = ({name, year, IMDB, RT, genre, photo}) => {
             return(
                 <div className="poster">
                     <div className="poster__top">
+                        <Icon/>
                         <img src={photo} alt={`Poster of ${name}`} />
                     </div>
                     <div className="poster__bottom">
