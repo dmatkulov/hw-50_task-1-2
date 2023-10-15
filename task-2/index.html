@@ -16,23 +16,23 @@
   <script type="text/babel">
       const Logo = () => {
           return(
-              <a href="#"><img className="logo" alt="logo"/></a>
+              <a href="#"><img src="images/uteach-logo.svg" className="logo" alt="logo"/></a>
           );
       };
 
-      const Li = ({link}) => {
+      const Li = ({text}) => {
           return(
-              <li className="listItem"><a href="#" className="link">{link}</a></li>
+              <li className="listItem"><a href="#" className="link">{text}</a></li>
           );
       };
 
       const Navigation = () => {
           return(
               <nav className="main-nav">
-                  <Li/>
-                  <Li/>
-                  <Li/>
-                  <Li/>
+                  <Li text="Products"/>
+                  <Li text="Solutions"/>
+                  <Li text="Pricing"/>
+                  <Li text="Resources"/>
               </nav>
           );
       };
@@ -48,6 +48,28 @@
               <button type="button" className="btn">{text}</button>
           );
       };
+
+      const Header = () => {
+          return(
+              <div className="header">
+                  <Logo/>
+                  <Navigation/>
+                  <div className="buttons">
+                      <Button text="Log in"/>
+                      <MainButton text="Sign up now"/>
+                  </div>
+              </div>
+          );
+      };
+
+      const header = (
+          <div className="container">
+              <Header/>
+          </div>
+      );
+
+      const container = document.getElementById('app');
+      ReactDOM.createRoot(container).render(header);
 
 
   </script>
