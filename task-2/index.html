@@ -14,6 +14,36 @@
 <body>
   <div id="app"></div>
   <script type="text/babel">
+      const Logo = () => {
+          return(
+              <a href="#"><img className="logo" alt="logo"/></a>
+          );
+      };
+
+      const Li = ({link}) => {
+          return(
+              <li className="listItem"><a href="#" className="link">{link}</a></li>
+          );
+      };
+
+      const Navigation = () => {
+          return(
+              <nav className="main-nav">
+                  <li/>
+                  <li/>
+                  <li/>
+                  <li/>
+                  <li/>
+              </nav>
+          )
+      }
+
+      const Button = ({text}) => {
+          return(
+              <button type="button">{text}</button>
+          );
+      };
+
 
   </script>
 </body>
