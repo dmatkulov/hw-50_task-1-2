@@ -36,7 +36,16 @@
             );
         };
 
+        const posters = (
+            <div className="container wrapper">
+                <Poster name="The Dark Knight" year={2008} IMDB={9.0} RT={94} genre="Superhero action film" photo="images/batman.jpg" />
+                <Poster name="The Last Samurai" year={2003} IMDB={7.8} RT={66} genre="Period action drama film" photo="images/the-last-samurai.jpg" />
+                <Poster name="The Lord Of The Rings" year={2001} IMDB={8.8} RT={91} genre="Fantasy action film" photo="images/lotr.jpeg" />
+            </div>
+        );
 
+        const container = document.getElementById('app');
+        ReactDOM.createRoot(container).render(posters);
     </script>
 </body>
 </html>
