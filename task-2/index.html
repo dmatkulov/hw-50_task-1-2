@@ -96,17 +96,31 @@
               </section>
           )
       }
+      const Footer = () => {
+          return(
+              <div className="container footer">
+                  <Logo/>
+                  <ul className="footer__nav">
+                      <Li text="Products"/>
+                      <Li text="Solutions"/>
+                      <Li text="Pricing"/>
+                      <Li text="Resources"/>
+                  </ul>
+              </div>
+          );
+      };
 
-      const app = (
+      const page = (
           <div>
               <Header/>
               <HeroSection/>
               <Tools/>
+              <Footer/>
           </div>
       );
 
       const container = document.getElementById('app');
-      ReactDOM.createRoot(container).render(app);
+      ReactDOM.createRoot(container).render(page);
 
 
   </script>
