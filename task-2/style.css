@@ -32,7 +32,6 @@ button {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
-    display: flex;
 }
 
 .header {
@@ -68,10 +67,36 @@ button {
     padding: 12px;
     border-radius: 8px;
     font-weight: 500;
+    margin-right: 24px;
 }
 
 .btn-primary {
     background-color: blue;
     color: white;
-    margin-left: 24px;
+}
+
+.main {
+    display: flex;
+    background: url("images/main-img.png") right 0 center / 45% auto no-repeat;
+    padding: 80px 0;
+}
+
+.main__title {
+    color: #0F172A;
+    font-size: 72px;
+    line-height: 110%;
+    margin: 0;
+}
+.main__info {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.main__section {
+    flex-basis: 50%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
 }
