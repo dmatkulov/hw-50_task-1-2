@@ -19,13 +19,11 @@
               <a href="#"><img src="images/uteach-logo.svg" className="logo" alt="logo"/></a>
           );
       };
-
       const Li = ({text}) => {
           return(
               <li className="listItem"><a href="#" className="link">{text}</a></li>
           );
       };
-
       const Navigation = () => {
           return(
               <nav className="main-nav">
@@ -38,19 +36,16 @@
               </nav>
           );
       };
-
       const MainButton = ({text}) => {
           return(
               <button type="button" className="btn btn-primary">{text}</button>
           );
       };
-
       const Button = ({text}) => {
           return(
               <button type="button" className="btn btn-secondary">{text}</button>
           );
       };
-
       const Header = () => {
           return(
               <div className="container header">
@@ -63,23 +58,50 @@
               </div>
           );
       };
-
       const HeroSection = () => {
           return(
               <section className="main container">
                   <div className="main__section">
                       <h1 className="main__title">Teach students worldwide</h1>
                       <p className="main__info">Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.</p>
-                      <MainButton text="Learn how"/>
+                      <MainButton text="Sign up now"/>
                   </div>
               </section>
           );
       };
+      const SideBar = () => {
+          return(
+              <aside className="sidebar">
+                  <ul className="side-list">
+                      <Li text="The map of mathematics"/>
+                      <Li text="Design for how people think"/>
+                      <Li text="International & commercial law"/>
+                      <Li text="Work fast, w/o interruptions"/>
+                  </ul>
+              </aside>
+          );
+      };
+      const Tools = () => {
+          return(
+              <section className="tools">
+                  <div className="container tools__section">
+                      <SideBar/>
+                      <div className="tools__info">
+                          <h2 className="title-h2">All the tools that you need</h2>
+                          <p>Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
+                              Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.</p>
+                          <Button text="Explore teachers and students"/>
+                      </div>
+                  </div>
+              </section>
+          )
+      }
 
       const app = (
           <div>
               <Header/>
               <HeroSection/>
+              <Tools/>
           </div>
       );
 
