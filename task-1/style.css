@@ -82,7 +82,7 @@ button {
     flex-grow: 1;
 }
 
-.rating {
+.ratings {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -100,7 +100,7 @@ button {
     padding-left: 40px;
 }
 
-.rating__rt {
+.ratings__rt {
     background: url("images/rt.png") left 0 center / auto 18px no-repeat;
     padding-left: 24px;
 }
